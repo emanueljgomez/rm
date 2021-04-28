@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProbandoComponent } from './probando.component';
+import { NavbarComponent } from './navbar.component';
 
 
 
 @NgModule({
   declarations: [
-    ProbandoComponent
+    NavbarComponent
   ],
   imports: [
     CommonModule
   ]
 })
-export class ProbandoModule { }
+export class NavbarModule { }
