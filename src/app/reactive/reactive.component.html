@@ -1,1 +1,51 @@
-<p>reactive works!</p>
+<form autocomplete="off" (ngSubmit)="save( formulario )" #formulario="ngForm">
+
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="user.name"
+             name="name"
+             required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Apellido</label>
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="user.lastname"
+             name="lastname"
+             required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Número de documento</label>
+        <input type="text"
+             class="form-control"
+             [(ngModel)]="user.dni"
+             name="dni"
+             required>
+     </div>
+    <div class="mb-3">
+        <label class="form-label">Correo electrónico</label>
+        <input type="text"
+             class="form-control"
+             [(ngModel)]="user.email"
+             name="email"
+             required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Número de teléfono</label>
+        <input type="text"
+             class="form-control"
+             [(ngModel)]="user.phone"
+             name="phone">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Dirección</label>
+        <input type="text"
+             class="form-control"
+             [(ngModel)]="user.address"
+             name="address">
+     </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+  </form>

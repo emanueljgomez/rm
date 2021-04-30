@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { User } from '../models/user/user.model';
 
 @Component({
   selector: 'app-reactive',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReactiveComponent implements OnInit {
 
+  user = new User();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  save( formulario: NgForm ) {
+    console.log( formulario );
   }
 
 }
